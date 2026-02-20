@@ -111,7 +111,7 @@ API_KEY=your_testnet_api_key
 API_SECRET=your_testnet_api_secret
 ```
 
-Testnet Base URL: https://testnet.binancefuture.com
+Testnet Base URL: https://demo.binance.com/en/futures/BTCUSDT
 
 ------------------------------------------------------------------------
 
