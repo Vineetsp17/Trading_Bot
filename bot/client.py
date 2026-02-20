@@ -1,0 +1,17 @@
+import os
+from binance.client import Client
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+def get_binance_client():
+    api_key = os.getenv("API_KEY")
+    api_secret = os.getenv("API_SECRET")
+
+    if not api_key or not api_secret:
+        raise ValueError("API credentials not found in environment variables.")
+
+    client = Client(api_key, api_secret, testnet=True)
+
+    return client
